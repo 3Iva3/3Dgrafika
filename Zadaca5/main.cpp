@@ -76,7 +76,7 @@ public:
 	}
 
 public:
-	std::vector<glm::vec2> points; // kontrolne tocke
+	std::vector<glm::vec2> points; 
 };
 
 int main ()
@@ -130,7 +130,7 @@ int main ()
 
 		glClear(GL_COLOR_BUFFER_BIT);
 
-		//RenderText("Press C to clear points", 25, 525, 0.5, glm::vec3(1.0f, 1.0f, 1.0f));
+		
 
 		for (glm::vec2& vec : curve.points) {
             RenderCircle(glm::vec2(vec.x, vec.y),5);
