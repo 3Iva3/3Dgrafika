@@ -10,7 +10,7 @@
 #include "glfw/glfw3.h"
 #include "glm/glm.hpp"
 
-//#include "TextRenderer.h"
+
 #include "CircleRenderer.h"
 #include "LineRenderer.h"
 
@@ -49,7 +49,7 @@ public:
 			curveLength += abs(sqrt(pow(points[i + 1].x - points[i].x, 2) + pow(points[i + 1].y - points[i].y, 2)));
 		}
 
-		//specifies how many points will be made
+		
 		float accuracy = 1.0f;
 
 		float currentPoint = 0.0f;
@@ -102,7 +102,7 @@ int main ()
 
 	bool mouseHeld = false;
 
-	//InitTextRendering();
+	
 	InitCircleRendering(100);
 	InitLineRendering();
 
